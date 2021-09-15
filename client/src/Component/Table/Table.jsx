@@ -7,7 +7,6 @@ const Table = ({ products }) => {
     <table>
       <thead>
         <tr>
-          <th>id</th>
           <th>Дата</th>
           <th>Название</th>
           <th>Количество</th>
@@ -17,9 +16,8 @@ const Table = ({ products }) => {
       <tbody>
         {products.map((product) => (
           <tr>
-            <td>{product.id}</td>
-            <td>{product.date}</td>
-            <td>{product.name}</td>
+            <td>{product.dates}</td>
+            <td>{product.names}</td>
             <td>{product.amount}</td>
             <td>{product.distance}</td>
           </tr>

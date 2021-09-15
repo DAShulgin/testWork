@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Filter from './Component/Filter/Filter';
+import ProductContainer from './Component/Product/ProductContainer';
 
 let products = [
   { id: '1', date: ' 10.08.2021', name: ' Lenovo s820', amount: '230', distance: '40' },
@@ -51,7 +51,7 @@ let products = [
 
 const App = () => {
   return (<div className="App">
-    <Filter products={products} />
+   <ProductContainer />
   </div>
 
   );
