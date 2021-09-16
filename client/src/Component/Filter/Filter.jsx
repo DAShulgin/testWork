@@ -21,7 +21,7 @@ const Filter = ({value1, SetValueList1, value2, SetValueList2, text, SetText }) 
 
         return <span>
             <label>
-                {nameList}:
+                <span>{nameList}:</span>
                 <select value={value} onChange={(e) => SetValueList(e.target.value)} >
                     {parametrList.map(p => <option value={p.value}> {p.columnsName}</option>)}
                 </select>
@@ -31,7 +31,6 @@ const Filter = ({value1, SetValueList1, value2, SetValueList2, text, SetText }) 
 
     return <div>
         <div className={style.filter}>
-            <div><b>Фильтр</b></div>
             <SelectedList nameList="Колонка" parametrList={parametrList1} value={value1} SetValueList={SetValueList1} />
             <SelectedList nameList="Условие" parametrList={parametrList2} value={value2} SetValueList={SetValueList2} />
             <span><input type="text" value={text} onChange={(e) => SetText(e.target.value)} /></span>

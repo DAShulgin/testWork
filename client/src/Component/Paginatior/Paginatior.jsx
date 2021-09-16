@@ -3,7 +3,7 @@ import style from './paginator.module.css';
 
 const Paginatior = ({ pages, setCurrentPage, currentPage, onNextClick, onPreviosClick }) => {
 
-    return <div>
+    return <div className = {style.pgPosition}>
 
         <button onClick={() => { onPreviosClick() }}> Назад </button>
 
